@@ -1,0 +1,27 @@
+header{
+    height: 45px;
+    padding: 8px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.bg-header{
+    background-image: linear-gradient(120deg, #f68084 0%, #a6c0fe 100%);
+}
+
+.title-header{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media screen and (max-width :359px){
+    header{
+        height: 72px;
+    }
+}

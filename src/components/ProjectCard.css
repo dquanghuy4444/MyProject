@@ -1,0 +1,64 @@
+.project-card{
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.imgbg-projectcard {
+  overflow: hidden;
+}
+
+.imgbg-projectcard img{
+  vertical-align: center;
+  max-width: 100%;
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.project-card:hover .imgbg-projectcard img{
+  filter: grayscale(30%);
+  transform: scale(1.05);
+}
+
+.project-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project-card:hover .btn-primary {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.project-card:hover .btn-success{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.state{
+  position: absolute;
+  top: -15px;
+  left: -5px;
+}
+
+.tech{
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+}
+
+.btn-success {
+  background-color: #c36180;
+  border-color: #c36180;
+}
+
+.btn-success:hover {
+  background-color: #be5173;
+  border-color: #be5173;
+}
+
+.btn-primary {
+  background-color: #717ed2;
+  border-color: #717ed2;
+}
+
+.btn-primary:hover {
+  background-color: #5b6bd3;
+  border-color: #5b6bd3;
+}

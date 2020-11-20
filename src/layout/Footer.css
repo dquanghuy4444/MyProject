@@ -1,0 +1,53 @@
+footer{
+    height: 200px;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-footer{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+
+.myinfor-footer{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 51% 100% 99% 71% / 73% 79% 100% 99%  ;
+    /* background-color: #d28e96; */
+    padding: 2px;
+    background: rgb(96,61,82);
+background: linear-gradient(90deg, rgba(96,61,82,1) 0%, rgba(161,96,152,1) 30%, rgba(161,96,152,1) 57%);
+
+}
+
+.myinfor-footer a{
+    text-decoration: none;
+    color: rgb(226 197 197);
+}
+
+.myinfor-footer a:hover{
+    color: white;
+    font-size: 21px;
+}
+
+
+@media screen and (max-width :374px){
+    footer{
+        height: 230px;
+    }
+}
+/* 
+@media screen and (max-height :1200px){
+    footer{
+        position: static;
+    }
+} */
+
+
