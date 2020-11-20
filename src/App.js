@@ -4,6 +4,7 @@ import Content from './layout/Content';
 import Footer from './layout/Footer';
 import "./App.css";
 import ButtonToggleDarkMode from './components/ButtonToggleDarkMode';
+import ButtonShowTemperature from './components/ButtonShowTemperature';
 
 function App() {
   const [isDarkMode , setIsDarkMode] = useState(false);
@@ -16,6 +17,7 @@ function App() {
       <Content isDarkMode={ isDarkMode }></Content>
       <Footer isDarkMode={ isDarkMode }></Footer>
       <ButtonToggleDarkMode setIsDarkModeFunc={ setIsDarkModeFunc } isDarkMode={ isDarkMode }></ButtonToggleDarkMode>
+      <ButtonShowTemperature></ButtonShowTemperature>
     </div>
   );
 }

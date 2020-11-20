@@ -1,0 +1,29 @@
+.temperature-button{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    font-size: 20px;
+    border-radius: 10%;
+    padding: 6px 8px;
+    color: rgb(15, 15, 9);
+    border: 2px solid rgb(15, 15, 9);
+    background-color: #d44f5b;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+}
+/* 
+.temperature-button:hover{
+    bottom: 59px;
+    right: 19px;
+    transform: 0.6s;
+}
+
+.temperature-button:active{
+    padding: 7px 9px;
+    bottom: 57px;
+    right: 21px;
+    border: 3px solid cornsilk;
+} */

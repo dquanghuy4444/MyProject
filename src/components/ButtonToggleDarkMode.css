@@ -1,7 +1,7 @@
 .darkmode-button{
     position: fixed;
-    bottom: 60px;
-    right: 18px;
+    bottom: 110px;
+    right: 20px;
     cursor: pointer;
     font-size: 20px;
     border-radius: 10%;
@@ -12,14 +12,14 @@
 }
 
 .darkmode-button:hover{
-    bottom: 59px;
-    right: 19px;
+    bottom: 111px;
+    right: 21px;
     transform: 0.6s;
 }
 
 .darkmode-button:active{
     padding: 7px 9px;
-    bottom: 57px;
+    bottom: 111px;
     right: 21px;
     border: 3px solid cornsilk;
 }
