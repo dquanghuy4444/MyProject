@@ -6,7 +6,7 @@ function ButtonToggleDarkMode({setIsDarkModeFunc , isDarkMode }) {
         <div onClick={ setIsDarkModeFunc } className={
             isDarkMode ? "darkmode-button bg-footer" : "darkmode-button darkmode"
         }>
-            { isDarkMode ? (<i class="fas fa-sun"></i>) :(<i class="fas fa-moon"></i>) }      
+            { isDarkMode ? (<i className="fas fa-sun"></i>) :(<i className="fas fa-moon"></i>) }      
         </div>     
     );
 }

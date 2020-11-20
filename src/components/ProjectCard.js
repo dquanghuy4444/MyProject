@@ -6,52 +6,79 @@ import {
 import { Container, Row, Col } from 'reactstrap';
 import "./ProjectCard.css";
 
-const ProjectCard = (props) => {
+const ProjectCard = ({project}) => {
   return (
     <div>
       <Card className="mt-4 mb-4 project-card">
         <Row>
             <Col sm="12" lg="5" xs="12">
                 <div className="imgbg-projectcard">
-                  <img src={ process.env.PUBLIC_URL + "/images/background cards/1.jpg" } alt="Card image cap" width="100%" />
+                  <img src={ process.env.PUBLIC_URL + "/images/background cards/" + project.imgBg } alt="Card image cap" width="100%" />
                 </div>
                 <div className="state">
-                  <img src={ process.env.PUBLIC_URL + "/completed.png" } alt="Card image cap" width="10%" />
-                  <img src={ process.env.PUBLIC_URL + "/www.png" } alt="Card image cap" width="10%" />
+                  {
+                    project.wasCompleted && (
+                      <img src={ process.env.PUBLIC_URL + "/completed.png" } alt="Card image cap" width="10%" />
+                    )
+                  }
+                  {
+                    project.wasPublish && (
+                      <img src={ process.env.PUBLIC_URL + "/www.png" } alt="Card image cap" width="10%" />
+                      )
+                  }
                 </div>
                 <div className="tech">
-                  <img src={ process.env.PUBLIC_URL + "/images/tech icons/reactjs.png" } alt="Card image cap" width="8%" />
-                  <img src={ process.env.PUBLIC_URL + "/images/tech icons/api.png" } alt="Card image cap" width="8%" />
+                  {
+                    project.imgTech.map((img , index) =>
+                      <img src={ process.env.PUBLIC_URL + "/images/tech icons/" + img } alt="Card image cap" width="8%" />
+                    )
+                  }
                 </div>   
             </Col>
             <Col sm="12" lg="7" xs="12">
                 <CardBody>
-                    <CardTitle tag="h5">Wishy wishy</CardTitle>
+                    <CardTitle tag="h5">
+                      { project.name }
+                    </CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Tự thiết kế
+                      { project.state === 0 ? "Tự thiết kế" : "Sao chép tác giả khác"}
                     </CardSubtitle>
                     <CardSubtitle tag="p" className="mb-2 text-muted">
-                      Đã hoàn thành
-                      <span style={{float : "right"}}>
-                        Thời gian : 50 giờ 
-                      </span>
+                      {
+                        project.wasCompleted ? (
+                          <>
+                            <>Đã hoàn thành</>
+                            <span style={{float : "right"}}>
+                              Thời gian : { project.time }
+                            </span>
+                          </>
+                        ) : (
+                          <p>Đang hoàn thành</p>
+                        )
+                      }
+
                     </CardSubtitle>
-                    <h6>ReactJS</h6>
+                    <h6>
+                      { project.tech }
+                    </h6>
                     <CardText>
-                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                      { project.description }
                     </CardText>
-                    <a href="" className="btn btn-success">
-                      <i class="fas fa-location-arrow"></i>
-                      {" "}
-                      Chuyển tới trang
-                    </a>
-                    <a href="" className="btn btn-primary ml-2">
+                    {
+                      project.wasPublish && (
+                        <a href={ project.linkPublicWeb } target="_blank" className="btn btn-success mr-2">
+                          <i className="fas fa-location-arrow"></i>
+                          {" "}
+                          Chuyển tới trang
+                        </a>
+                      )
+                    }
+                    <a href={ project.linkSourceCode } target="_blank" className="btn btn-primary">
                       <i className="fab fa-github"></i>
                       {" "}
                       Source Code
                     </a> 
                 </CardBody>    
-
             </Col>
         </Row>
       </Card>
