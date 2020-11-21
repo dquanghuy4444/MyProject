@@ -43,7 +43,7 @@ const ProjectCard = ({project}) => {
                     <CardSubtitle tag="h6" className="mb-2 text-muted">
                       { project.state === 0 ? "Tự thiết kế" : "Sao chép tác giả khác"}
                     </CardSubtitle>
-                    <CardSubtitle tag="p" className="mb-2 text-muted">
+                    <CardSubtitle tag="span" className="mb-2 text-muted">
                       {
                         project.wasCompleted ? (
                           <>

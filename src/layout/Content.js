@@ -66,8 +66,9 @@ function Content({isDarkMode}) {
   return (
     <Container className="mb-3 mt-4">
       {
-        myprojects.map((project , index) =>
-          <ProjectCard project={ project } key={ index }></ProjectCard>
+        myprojects.map((project , index) =>{
+          return <ProjectCard project={ project } key={ index }></ProjectCard>;
+          }
         )
       }
     </Container>
