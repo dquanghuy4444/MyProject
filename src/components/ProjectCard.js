@@ -9,7 +9,7 @@ import "./ProjectCard.css";
 const ProjectCard = ({project}) => {
   return (
     <div>
-      <Card className="mt-4 mb-4 project-card">
+      <Card className="mt-4 mb-4 project-card ani-lefttoright-projectcard">
         <Row>
             <Col sm="12" lg="5" xs="12">
                 <div className="imgbg-projectcard">

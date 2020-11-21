@@ -1,6 +1,7 @@
 .project-card{
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all ease-in-out 0.4s;
 }
 
 .imgbg-projectcard {
@@ -17,10 +18,12 @@
 .project-card:hover .imgbg-projectcard img{
   filter: grayscale(30%);
   transform: scale(1.05);
+
 }
 
 .project-card:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: translateX(-10px);
 }
 
 .project-card:hover .btn-primary {
@@ -48,7 +51,8 @@
   border-color: #c36180;
 }
 
-.btn-success:hover {
+.btn-success:hover,
+.btn-success:active {
   background-color: #be5173;
   border-color: #be5173;
 }
@@ -58,7 +62,8 @@
   border-color: #717ed2;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active {
   background-color: #5b6bd3;
   border-color: #5b6bd3;
 }

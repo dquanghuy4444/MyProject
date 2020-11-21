@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonCopyText from '../components/ButtonCopyText';
 import './Footer.css';
 
 function Footer({isDarkMode}) {
@@ -23,16 +24,22 @@ function Footer({isDarkMode}) {
           <i className="fas fa-envelope-square"></i>
           {" "}
           : wepiohip@gmail.com
+          {" "}
+          <ButtonCopyText text="wepiohip@gmail.com"></ButtonCopyText>
         </div>
         <div>
           <i className="fab fa-skype"></i>
           {" "}
           : wepiohip
+          {" "}
+          <ButtonCopyText text="wepiohip"></ButtonCopyText>
         </div>
         <div>
           <i className="fas fa-phone-alt"></i>
           {" "}
           : 0963181679
+          {" "}
+          <ButtonCopyText text="0963181679"></ButtonCopyText>
         </div>
         <div>
           <i className="fas fa-map-marked-alt"></i>

@@ -14,16 +14,13 @@
     align-items: center;
     width: 110px;
 }
-/* 
-.temperature-button:hover{
-    bottom: 59px;
-    right: 19px;
-    transform: 0.6s;
+
+.ani-temper{
+    animation: aniForButtonTemper 1.2s 1;
 }
 
-.temperature-button:active{
-    padding: 7px 9px;
-    bottom: 57px;
-    right: 21px;
-    border: 3px solid cornsilk;
-} */
+@keyframes aniForButtonTemper {
+    0%   {right: -35px;}
+    50%  {right: 35px;}
+    100% {right: 20px;}
+}

@@ -27,7 +27,7 @@ function ButtonShowTemperature() {
         return <></>;
     }
     return (
-        <div className="temperature-button">
+        <div className="temperature-button ani-temper">
             { temper } ℃
             <img src={`http://openweathermap.org/img/wn/${dayIcon}.png`} width="35%"></img>
         </div>     
