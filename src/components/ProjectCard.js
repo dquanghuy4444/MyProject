@@ -41,7 +41,7 @@ const ProjectCard = ({project}) => {
                       { project.name }
                     </CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      { project.state === 0 ? "Tự thiết kế" : "Sao chép tác giả khác"}
+                      { project.state === 0 ? "Tự thiết kế" : "Sao chép từ tác giả khác"}
                     </CardSubtitle>
                     <CardSubtitle tag="span" className="mb-2 text-muted">
                       {

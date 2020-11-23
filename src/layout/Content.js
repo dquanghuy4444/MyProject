@@ -24,7 +24,7 @@ const myprojects = [
     state: 0, // 0 : handmake , 1 : clone
     wasCompleted: true,
     wasPublish: true,
-    time: "50h",
+    time: "30h",
     tech: "ReactJS + MockAPI",
     description: "Đây là trang web để chưa đựng điều ước của người dùng",
     imgBg: "2.jpg",
@@ -59,7 +59,21 @@ const myprojects = [
     imgTech: ["dotnet.png"],
     linkPublicWeb: "",
     linkSourceCode: "https://github.com/dquanghuy4444/GasMap",
-  }
+  },
+  {
+    id:4,
+    name:"Chat room",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: true,
+    time: "3h",
+    tech: "NodeJS + SocketIO + Express + ejs",
+    description: "Trang web để chat với mọi người",
+    imgBg: "5.jpg",
+    imgTech: ["nodejs.png"],
+    linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
+    linkSourceCode: "https://github.com/dquanghuy4444/ChatRoom",
+  },
 ]
 
 function Content({isDarkMode}) {
