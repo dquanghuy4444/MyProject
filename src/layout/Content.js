@@ -61,7 +61,7 @@ const myprojects = [
     linkSourceCode: "https://github.com/dquanghuy4444/GasMap",
   },
   {
-    id:4,
+    id:5,
     name:"Chat room",
     state: 1, // 0 : handmake , 1 : clone
     wasCompleted: true,
@@ -70,7 +70,7 @@ const myprojects = [
     tech: "NodeJS + SocketIO + Express + ejs",
     description: "Trang web để chat với mọi người",
     imgBg: "5.jpg",
-    imgTech: ["nodejs.png"],
+    imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
     linkSourceCode: "https://github.com/dquanghuy4444/ChatRoom",
   },
