@@ -15,8 +15,8 @@ const myprojects = [
     description: "Ứng dụng để tra cứu thông tin dịch covid 19 của từng nước và thế giới",
     imgBg: "1.jpg",
     imgTech: ["reactjs.png"],
-    linkPublicWeb: "https://dquanghuy4444.github.io/covid19-tracker/",
-    linkSourceCode: "https://github.com/dquanghuy4444/covid19-tracker",
+    linkPublicWeb: "https://dquanghuy4444.github.io/Covid19Tracker/",
+    linkSourceCode: "https://github.com/dquanghuy4444/Covid19Tracker",
   },
   {
     id:2,
@@ -76,7 +76,7 @@ const myprojects = [
   },
 ]
 
-function Content({isDarkMode}) {
+function Content() {
   return (
     <Container className="mb-3 mt-4">
       {
