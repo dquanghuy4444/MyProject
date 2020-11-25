@@ -1,9 +1,25 @@
-import React , {useState} from 'react';
+import React , {useState , useRef, useEffect} from 'react';
 import './ButtonFilterProject.css';
 import { FormGroup, Label, Input } from 'reactstrap';
 
 function ButtonFilterProject({ setFilter , filter }) {
     const [isOpenFilterMode , setIsOpenFilterMode] = useState(false);
+
+    function useOutsideAlerter(ref) {
+        useEffect(() => {
+          function handleClickOutside(event) {
+            if (ref.current && !ref.current.contains(event.target) && !isOpenFilterMode) {
+                setIsOpenFilterMode(false)
+            }
+          }
+          // Bind the event listener
+          document.addEventListener("mousedown", handleClickOutside);
+          return () => {
+            // Unbind the event listener on clean up
+            document.removeEventListener("mousedown", handleClickOutside);
+          };
+        }, [ref]);
+    }
 
     const setStateFilter = (state) =>{
         let stateTemp = filter.state;
@@ -22,8 +38,13 @@ function ButtonFilterProject({ setFilter , filter }) {
         setFilter({...filter,techid:techid});
     }
 
+    const wrapperRef = useRef(null);
+    useOutsideAlerter(wrapperRef);
+
     return (
-        <div className={ isOpenFilterMode ? 
+        <div
+        ref={wrapperRef}
+        className={ isOpenFilterMode ? 
             "filterpj-button darkmode filterpj-button-active" :
             "filterpj-button darkmode"
         }>
