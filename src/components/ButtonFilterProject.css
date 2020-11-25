@@ -1,0 +1,44 @@
+.filterpj-button{
+    position: fixed;
+    bottom: 170px;
+    right: 20px;
+    border-radius: 10%;
+    padding: 6px 8px;
+    color: cornsilk;
+    border: 2px solid cornsilk;
+}
+
+.filterpj-button i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.filterpj-button:hover{
+    bottom: 171px;
+    right: 21px;
+    transform: 0.6s;
+}
+
+.filterpj-button-active{
+    bottom: 171px;
+    right: 21px;
+    border-radius: 5px;
+    width: 250px;
+    opacity: 0.81;
+    cursor: default;
+}
+
+.filterpj-button-active i{
+    cursor: pointer;
+    color: rgb(179, 97, 109);
+}
+
+.form-check{
+    margin: 0 5px 0 10px;
+    display: inline;
+}
+
+.form-group{
+    margin: 0;
+    /* display: inline; */
+}

@@ -1,14 +1,14 @@
 .temperature-button{
     position: fixed;
-    bottom: 50px;
+    bottom: 55px;
     right: 20px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10%;
     padding: 6px 8px;
     color: rgb(15, 15, 9);
     border: 2px solid rgb(15, 15, 9);
     background-color: #d44f5b;
-    opacity: 0.7;
+    opacity: 0.66;
     display: flex;
     justify-content: center;
     align-items: center;

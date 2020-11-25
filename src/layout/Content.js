@@ -1,6 +1,6 @@
 import React from 'react';
 import './Content.css';
-import { Container } from 'reactstrap';
+import { Button, Container } from 'reactstrap';
 import ProjectCard from '../components/ProjectCard';
 
 const myprojects = [
@@ -12,6 +12,7 @@ const myprojects = [
     wasPublish: true,
     time: "2h",
     tech: "ReactJS ",
+    techid: [1],
     description: "Ứng dụng để tra cứu thông tin dịch covid 19 của từng nước và thế giới",
     imgBg: "1.jpg",
     imgTech: ["reactjs.png"],
@@ -26,6 +27,7 @@ const myprojects = [
     wasPublish: true,
     time: "30h",
     tech: "ReactJS + MockAPI",
+    techid: [1],
     description: "Đây là trang web để chưa đựng điều ước của người dùng",
     imgBg: "2.jpg",
     imgTech: ["reactjs.png","api.png"],
@@ -40,6 +42,7 @@ const myprojects = [
     wasPublish: true,
     time: "",
     tech: "ReactJS",
+    techid: [1],
     description: "Đây là trang web để chưa đựng điều ước của người dùng",
     imgBg: "3.jpg",
     imgTech: ["reactjs.png"],
@@ -54,6 +57,7 @@ const myprojects = [
     wasPublish: false,
     time: "",
     tech: "Asp.net MVC + Asp.net Webservice + Leaflet",
+    techid: [0],
     description: "Đây là trang web để hiển thị cửa hàng gas , yêu cầu gọi gas của khách hàng",
     imgBg: "4.jpg",
     imgTech: ["dotnet.png"],
@@ -68,22 +72,65 @@ const myprojects = [
     wasPublish: true,
     time: "3h",
     tech: "NodeJS + SocketIO + Express + ejs",
+    techid: [2],
     description: "Trang web để chat với mọi người",
     imgBg: "5.jpg",
     imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
     linkSourceCode: "https://github.com/dquanghuy4444/ChatRoom",
   },
+  {
+    id:6,
+    name:"WebRTC",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: false,
+    time: "1h30",
+    tech: "NodeJS + SocketIO + Express + ejs + PeerJS",
+    techid: [2],
+    description: "Trang web để video call với mọi người",
+    imgBg: "6.jpg",
+    imgTech: ["nodejs.png","socketio.png"],
+    linkPublicWeb: "",
+    linkSourceCode: "https://github.com/dquanghuy4444/WebRTCStream",
+  },
 ]
 
-function Content() {
+function Content({filter , setFilter}) {
+
+  const showProjects = () =>{
+    let result = myprojects;
+    if(filter.state !== -1){
+      result = result.filter((project) =>
+        project.state === filter.state
+      )
+    }
+    if(filter.techid !== -1){
+      result = result.filter((project) =>
+        project.techid.some(techid => techid === filter.techid)
+      )
+    }
+    if(result.length > 0){
+      return result.map((project) =>
+        <ProjectCard project={ project } key={ project.id }></ProjectCard>
+      )
+    }
+    return (
+      <div className="noproject-area">
+        <h4>Chưa có dự án nào phù hợp</h4>
+        <Button onClick={ () => setFilter({state:-1,techid:-1})}>
+          <i className="fas fa-arrow-circle-left"></i>
+          {" "}
+          Trở lại
+          </Button>
+      </div>
+    )
+  }
+
   return (
     <Container className="mb-3 mt-4">
       {
-        myprojects.map((project , index) =>{
-          return <ProjectCard project={ project } key={ index }></ProjectCard>;
-          }
-        )
+        showProjects()
       }
     </Container>
   );

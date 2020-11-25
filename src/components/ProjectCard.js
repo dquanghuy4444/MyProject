@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  Card, CardText, CardBody,
+  CardTitle, CardSubtitle
 } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import "./ProjectCard.css";
 
 const ProjectCard = ({project}) => {
