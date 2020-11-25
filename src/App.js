@@ -11,7 +11,8 @@ function App() {
   const [isDarkMode , setIsDarkMode] = useState(false);
   const [filter , setFilter] = useState({
     state:-1, // -1 : all , 0 : handmake , 1 : clone
-    techid:-1  // -1:all , 0:ASP.Net , 1:ReactJS , 2:NodeJS
+    techid:-1,  // -1:all , 0:ASP.Net , 1:ReactJS , 2:NodeJS
+    favorite:false
   });
 
   const setIsDarkModeFunc = () => setIsDarkMode(!isDarkMode);

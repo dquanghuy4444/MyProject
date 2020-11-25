@@ -14,6 +14,7 @@ const myprojects = [
     tech: "ReactJS ",
     techid: [1],
     description: "Ứng dụng để tra cứu thông tin dịch covid 19 của từng nước và thế giới",
+    isFavorited:false,
     imgBg: "1.jpg",
     imgTech: ["reactjs.png"],
     linkPublicWeb: "https://dquanghuy4444.github.io/Covid19Tracker/",
@@ -25,10 +26,11 @@ const myprojects = [
     state: 0, // 0 : handmake , 1 : clone
     wasCompleted: true,
     wasPublish: true,
-    time: "30h",
+    time: "25h",
     tech: "ReactJS + MockAPI",
     techid: [1],
     description: "Đây là trang web để chưa đựng điều ước của người dùng",
+    isFavorited:true,
     imgBg: "2.jpg",
     imgTech: ["reactjs.png","api.png"],
     linkPublicWeb: "https://wishywishy.netlify.app/",
@@ -44,6 +46,7 @@ const myprojects = [
     tech: "ReactJS",
     techid: [1],
     description: "Đây là trang web để chưa đựng điều ước của người dùng",
+    isFavorited:true,
     imgBg: "3.jpg",
     imgTech: ["reactjs.png"],
     linkPublicWeb: "https://poshopz.herokuapp.com/",
@@ -59,6 +62,7 @@ const myprojects = [
     tech: "Asp.net MVC + Asp.net Webservice + Leaflet",
     techid: [0],
     description: "Đây là trang web để hiển thị cửa hàng gas , yêu cầu gọi gas của khách hàng",
+    isFavorited:true,
     imgBg: "4.jpg",
     imgTech: ["dotnet.png"],
     linkPublicWeb: "",
@@ -74,6 +78,7 @@ const myprojects = [
     tech: "NodeJS + SocketIO + Express + ejs",
     techid: [2],
     description: "Trang web để chat với mọi người",
+    isFavorited:false,
     imgBg: "5.jpg",
     imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
@@ -89,10 +94,27 @@ const myprojects = [
     tech: "NodeJS + SocketIO + Express + ejs + PeerJS",
     techid: [2],
     description: "Trang web để video call với mọi người",
+    isFavorited:false,
     imgBg: "6.jpg",
     imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "",
     linkSourceCode: "https://github.com/dquanghuy4444/WebRTCStream",
+  },
+  {
+    id:7,
+    name:"Posts",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: true,
+    time: "1h",
+    tech: "NodeJS + Express + MongoDB + Handlebars",
+    techid: [2],
+    description: "CRUD Post",
+    isFavorited:false,
+    imgBg: "7.jpg",
+    imgTech: ["nodejs.png","mongodb.png"],
+    linkPublicWeb: "https://pohipposts.herokuapp.com/",
+    linkSourceCode: "https://github.com/dquanghuy4444/Posts",
   },
 ]
 
@@ -100,6 +122,11 @@ function Content({filter , setFilter}) {
 
   const showProjects = () =>{
     let result = myprojects;
+    if(filter.favorite){
+      result = result.filter((project) =>
+        project.isFavorited === true
+      )
+    }
     if(filter.state !== -1){
       result = result.filter((project) =>
         project.state === filter.state

@@ -23,7 +23,7 @@
     bottom: 171px;
     right: 21px;
     border-radius: 5px;
-    width: 250px;
+    width: 260px;
     opacity: 0.81;
     cursor: default;
 }
@@ -40,5 +40,4 @@
 
 .form-group{
     margin: 0;
-    /* display: inline; */
 }

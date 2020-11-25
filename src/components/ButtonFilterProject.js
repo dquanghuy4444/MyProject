@@ -69,6 +69,15 @@ function ButtonFilterProject({ setFilter , filter }) {
                     </FormGroup>
                 )
             }
+                                    {
+                isOpenFilterMode && (
+                    <FormGroup check>
+                        <Label check>
+                            <Input type="checkbox" checked={filter.favorite} onClick={ () => setFilter({...filter,favorite:!filter.favorite}) } /> Những project tâm đắc của tôi
+                        </Label>
+                    </FormGroup>
+                )
+            }
             {
                 isOpenFilterMode && (
                     <FormGroup>
@@ -81,6 +90,7 @@ function ButtonFilterProject({ setFilter , filter }) {
                     </FormGroup>
                 )
             }
+
 
         </div>   
     );
