@@ -17,7 +17,7 @@ const myprojects = [
     isFavorited:false,
     imgBg: "1.jpg",
     imgTech: ["reactjs.png"],
-    linkPublicWeb: "https://dquanghuy4444.github.io/Covid19Tracker/",
+    linkPublicWeb: "https://covid19trackerzz.netlify.app/",
     linkSourceCode: "https://github.com/dquanghuy4444/Covid19Tracker",
   },
   {
@@ -115,6 +115,22 @@ const myprojects = [
     imgTech: ["nodejs.png","mongodb.png"],
     linkPublicWeb: "https://pohipposts.herokuapp.com/",
     linkSourceCode: "https://github.com/dquanghuy4444/Posts",
+  },
+  {
+    id:8,
+    name:"Quiz App",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: true,
+    time: "1h30",
+    tech: "ReactJS(Typescript)",
+    techid: [2],
+    description: "App để trả lời câu hỏi",
+    isFavorited:false,
+    imgBg: "8.jpg",
+    imgTech: ["reactjs.png"],
+    linkPublicWeb: "https://quizappz.netlify.app/",
+    linkSourceCode: "https://github.com/dquanghuy4444/QuizApp",
   },
 ]
 
