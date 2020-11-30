@@ -124,7 +124,7 @@ const myprojects = [
     wasPublish: true,
     time: "1h30",
     tech: "ReactJS(Typescript)",
-    techid: [2],
+    techid: [1],
     description: "App để trả lời câu hỏi",
     isFavorited:false,
     imgBg: "8.jpg",
