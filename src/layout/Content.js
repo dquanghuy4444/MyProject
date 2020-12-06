@@ -132,6 +132,38 @@ const myprojects = [
     linkPublicWeb: "https://quizappz.netlify.app/",
     linkSourceCode: "https://github.com/dquanghuy4444/QuizApp",
   },
+  {
+    id:9,
+    name:"Restful API",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: false,
+    time: "2h",
+    tech: "NodeJS + Express + Mongodb",
+    techid: [2],
+    description: "Viết API bằng node , express",
+    isFavorited:false,
+    imgBg: "9.jpg",
+    imgTech: ["api.png","nodejs.png","mongodb.png"],
+    linkPublicWeb: "",
+    linkSourceCode: "https://github.com/dquanghuy4444/RestfulAPI",
+  },
+  {
+    id:10,
+    name:"API authentication with JWT",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: true,
+    wasPublish: false,
+    time: "2h",
+    tech: "NodeJS + Express + Mongodb + Jsonwebtoken + Bcryptjs ",
+    techid: [2],
+    description: "Viết API và xác minh bằng JWT",
+    isFavorited:false,
+    imgBg: "10.jpg",
+    imgTech: ["api.png","nodejs.png","mongodb.png"],
+    linkPublicWeb: "",
+    linkSourceCode: "https://github.com/dquanghuy4444/AuthenticationJWT",
+  },
 ]
 
 function Content({filter , setFilter}) {
