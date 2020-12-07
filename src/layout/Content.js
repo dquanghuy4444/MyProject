@@ -164,6 +164,22 @@ const myprojects = [
     linkPublicWeb: "",
     linkSourceCode: "https://github.com/dquanghuy4444/AuthenticationJWT",
   },
+    {
+    id:11,
+    name:"React Components",
+    state: 1, // 0 : handmake , 1 : clone
+    wasCompleted: false,
+    wasPublish: true,
+    time: "",
+    tech: "ReactJS ",
+    techid: [1],
+    description: "Những component quan trọng , hay sử dụng",
+    isFavorited:true,
+    imgBg: "11.jpg",
+    imgTech: ["reactjs.png"],
+    linkPublicWeb: "https://pohipcomponents.netlify.app",
+    linkSourceCode: "https://github.com/dquanghuy4444/MyReactJSComponents",
+  },
 ]
 
 function Content({filter , setFilter}) {
