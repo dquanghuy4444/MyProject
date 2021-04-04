@@ -17,8 +17,8 @@ const myprojects = [
     isFavorited:false,
     imgBg: "1.jpg",
     imgTech: ["reactjs.png"],
-    linkPublicWeb: "https://covid19trackerzz.netlify.app/",
-    linkSourceCode: "https://github.com/dquanghuy4444/Covid19Tracker",
+    linkPublicWeb: "https://pohip-covid19-tracker.netlify.app/",
+    linkSourceCode: "https://github.com/dquanghuy4444/covid19-tracker",
   },
   {
     id:2,
@@ -34,7 +34,7 @@ const myprojects = [
     imgBg: "2.jpg",
     imgTech: ["reactjs.png","api.png"],
     linkPublicWeb: "https://wishywishy.netlify.app/",
-    linkSourceCode: "https://github.com/dquanghuy4444/WishyWishy",
+    linkSourceCode: "https://github.com/dquanghuy4444/wishywishy",
   },
   {
     id:3,
@@ -50,7 +50,7 @@ const myprojects = [
     imgBg: "3.jpg",
     imgTech: ["reactjs.png"],
     linkPublicWeb: "https://poshopz.herokuapp.com/",
-    linkSourceCode: "https://github.com/dquanghuy4444/PoShop-MobileStore",
+    linkSourceCode: "https://github.com/dquanghuy4444/poshop-mobilestore",
   },
   {
     id:4,
@@ -66,7 +66,7 @@ const myprojects = [
     imgBg: "4.jpg",
     imgTech: ["dotnet.png"],
     linkPublicWeb: "",
-    linkSourceCode: "https://github.com/dquanghuy4444/GasMap",
+    linkSourceCode: "https://github.com/dquanghuy4444/gas-map",
   },
   {
     id:5,
@@ -82,7 +82,7 @@ const myprojects = [
     imgBg: "5.jpg",
     imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
-    linkSourceCode: "https://github.com/dquanghuy4444/ChatRoom",
+    linkSourceCode: "https://github.com/dquanghuy4444/chatroom",
   },
   {
     id:6,
@@ -98,7 +98,7 @@ const myprojects = [
     imgBg: "6.jpg",
     imgTech: ["nodejs.png","socketio.png"],
     linkPublicWeb: "",
-    linkSourceCode: "https://github.com/dquanghuy4444/WebRTCStream",
+    linkSourceCode: "https://github.com/dquanghuy4444/webrtc-stream",
   },
   {
     id:7,
@@ -114,7 +114,7 @@ const myprojects = [
     imgBg: "7.jpg",
     imgTech: ["nodejs.png","mongodb.png"],
     linkPublicWeb: "https://pohipposts.herokuapp.com/",
-    linkSourceCode: "https://github.com/dquanghuy4444/Posts",
+    linkSourceCode: "https://github.com/dquanghuy4444/posts",
   },
   {
     id:8,
@@ -129,8 +129,8 @@ const myprojects = [
     isFavorited:false,
     imgBg: "8.jpg",
     imgTech: ["reactjs.png"],
-    linkPublicWeb: "https://quizappz.netlify.app/",
-    linkSourceCode: "https://github.com/dquanghuy4444/QuizApp",
+    linkPublicWeb: "https://pohip-quizapp.netlify.app/",
+    linkSourceCode: "https://github.com/dquanghuy4444/quiz-app",
   },
   {
     id:9,
@@ -146,7 +146,7 @@ const myprojects = [
     imgBg: "9.jpg",
     imgTech: ["api.png","nodejs.png","mongodb.png"],
     linkPublicWeb: "",
-    linkSourceCode: "https://github.com/dquanghuy4444/RestfulAPI",
+    linkSourceCode: "https://github.com/dquanghuy4444/restful-api",
   },
   {
     id:10,
@@ -162,7 +162,7 @@ const myprojects = [
     imgBg: "10.jpg",
     imgTech: ["api.png","nodejs.png","mongodb.png"],
     linkPublicWeb: "",
-    linkSourceCode: "https://github.com/dquanghuy4444/AuthenticationJWT",
+    linkSourceCode: "https://github.com/dquanghuy4444/authentication-jwt",
   },
     {
     id:11,
@@ -177,8 +177,8 @@ const myprojects = [
     isFavorited:true,
     imgBg: "11.jpg",
     imgTech: ["reactjs.png"],
-    linkPublicWeb: "https://pohipcomponents.netlify.app",
-    linkSourceCode: "https://github.com/dquanghuy4444/MyReactJSComponents",
+    linkPublicWeb: "https://pohip-components.netlify.app/",
+    linkSourceCode: "https://github.com/dquanghuy4444/my-react-components",
   },
 ]
 
