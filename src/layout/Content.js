@@ -196,6 +196,22 @@ const myprojects = [
     linkPublicWeb: "https://pohip-css-shape.netlify.app/",
     linkSourceCode: "https://github.com/dquanghuy4444/my-css-shape",
   },
+       {
+    id:13,
+    name:"State Management",
+    state: 0, // 0 : handmake , 1 : clone
+    wasCompleted: false,
+    wasPublish: false,
+    time: "",
+    tech: "ReactJS ",
+    techid: [1],
+    description: "Những thư viện hay trick để quản lí state",
+    isFavorited:true,
+    imgBg: "12.jpg",
+    imgTech: ["reactjs.png"],
+    linkPublicWeb: "",
+    linkSourceCode: "https://github.com/dquanghuy4444/my-state-managements",
+  },
 ]
 
 function Content({filter , setFilter}) {
