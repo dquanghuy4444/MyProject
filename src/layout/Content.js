@@ -164,7 +164,7 @@ const myprojects = [
     linkPublicWeb: "",
     linkSourceCode: "https://github.com/dquanghuy4444/authentication-jwt",
   },
-    {
+   {
     id:11,
     name:"React Components",
     state: 1, // 0 : handmake , 1 : clone
@@ -179,6 +179,22 @@ const myprojects = [
     imgTech: ["reactjs.png"],
     linkPublicWeb: "https://pohip-components.netlify.app/",
     linkSourceCode: "https://github.com/dquanghuy4444/my-react-components",
+  },
+     {
+    id:12,
+    name:"CSS Shape",
+    state: 0, // 0 : handmake , 1 : clone
+    wasCompleted: false,
+    wasPublish: true,
+    time: "",
+    tech: "ReactJS ",
+    techid: [1],
+    description: "Những hình dáng , tính năng hay sử dụng trong CSS",
+    isFavorited:true,
+    imgBg: "12.jpg",
+    imgTech: ["reactjs.png"],
+    linkPublicWeb: "https://pohip-css-shape.netlify.app/",
+    linkSourceCode: "https://github.com/dquanghuy4444/my-css-shape",
   },
 ]
 
