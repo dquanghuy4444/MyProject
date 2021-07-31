@@ -6,7 +6,7 @@ function Header({isDarkMode}) {
       <header className={ isDarkMode ? "darkmode" : "bg-header"}>
         <div>
             <h4 className="title-header">
-                Những dự án cá nhân của tôi 
+                Những dự án cá nhân của Pơ Híp 
             </h4>
         </div>
       </header>
