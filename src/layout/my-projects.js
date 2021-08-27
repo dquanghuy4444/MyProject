@@ -13,7 +13,7 @@ export const myprojects = [
         isFavorited: true,
         imgBg: "11.jpg",
         imgTech: ["reactjs.png"],
-        linkPublicWeb: "https://custom-your-face.vercel.app/",
+        linkPublicWeb: "https://custom-your-face.netlify.app/",
         linkSourceCode: "",
     },
     {
