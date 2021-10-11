@@ -7,7 +7,7 @@ export const myprojects = [
         wasCompleted: false,
         wasPublish: true,
         time: "",
-        tech: "NextJS(tailwindcss + fabricjs) ",
+        tech: "NextJS(tailwindcss + fabricjs) + Strapi + S3",
         techid: [1],
         description: "Bán quần áo mang tính cá nhân ",
         isFavorited: true,
