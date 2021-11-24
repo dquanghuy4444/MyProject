@@ -192,4 +192,20 @@ export const myprojects = [
         linkPublicWeb: "https://pohip-components.netlify.app/",
         linkSourceCode: "https://github.com/dquanghuy4444/my-react-components",
     },
+        {
+        id: 12,
+        name: "Library Pohip-common",
+        state: 1, // 0 : handmake , 1 : clone
+        wasCompleted: false,
+        wasPublish: true,
+        time: "",
+        tech: "ReactJS ",
+        techid: [1],
+        description: "Library chứa các hàm common",
+        isFavorited: true,
+        imgBg: "11.jpg",
+        imgTech: ["reactjs.png"],
+        linkPublicWeb: "https://www.npmjs.com/package/pohip-common",
+        linkSourceCode: "https://github.com/dquanghuy4444/pohip-common",
+    },
 ]
