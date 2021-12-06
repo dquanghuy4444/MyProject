@@ -18,7 +18,7 @@ export const myprojects = [
     },
         {
         id: 0,
-        name: "Custom Your Face",
+        name: "PSD Parse",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: true,
         wasPublish: true,
