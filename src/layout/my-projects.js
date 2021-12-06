@@ -1,7 +1,7 @@
 
 export const myprojects = [
     {
-        id: 0,
+        id: -1,
         name: "Custom Your Face",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: false,
@@ -15,6 +15,22 @@ export const myprojects = [
         imgTech: ["reactjs.png"],
         linkPublicWeb: "https://customyourface.netlify.app/",
         linkSourceCode: "",
+    },
+        {
+        id: 0,
+        name: "Custom Your Face",
+        state: 0, // 0 : handmake , 1 : clone
+        wasCompleted: true,
+        wasPublish: true,
+        time: "",
+        tech: "ReactJS + PSDjs + FabricJS",
+        techid: [1],
+        description: "Parse PSD sang hình ảnh",
+        isFavorited: true,
+        imgBg: "11.jpg",
+        imgTech: ["reactjs.png"],
+        linkPublicWeb: "https://pohip-psd-parser.netlify.app/",
+        linkSourceCode: "https://github.com/dquanghuy4444/psd-parser",
     },
     {
         id: 1,
