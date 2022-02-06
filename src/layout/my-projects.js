@@ -1,6 +1,22 @@
 
 export const myprojects = [
     {
+        id: -2,
+        name: "daudit",
+        state: 0, // 0 : handmake , 1 : clone
+        wasCompleted: true,
+        wasPublish: true,
+        time: "16h",
+        tech: "Reactjs(tailwindcss) + Firebase (firestore + cloud)",
+        techid: [1],
+        description: "App chơi game đầu đít",
+        isFavorited: true,
+        imgBg: "19.jpg",
+        imgTech: ["reactjs.png"],
+        linkPublicWeb: "https://daudit.vercel.app/",
+        linkSourceCode: "",
+    },
+    {
         id: -1,
         name: "Custom Your Face",
         state: 0, // 0 : handmake , 1 : clone
@@ -16,7 +32,7 @@ export const myprojects = [
         linkPublicWeb: "https://curf.vercel.app/",
         linkSourceCode: "",
     },
-        {
+    {
         id: 0,
         name: "PSD Parse",
         state: 0, // 0 : handmake , 1 : clone
