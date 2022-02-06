@@ -11,7 +11,7 @@ export const myprojects = [
         techid: [1],
         description: "App chơi game đầu đít",
         isFavorited: true,
-        imgBg: "19.jpg",
+        imgBg: "10.jpg",
         imgTech: ["reactjs.png"],
         linkPublicWeb: "https://daudit.vercel.app/",
         linkSourceCode: "",
