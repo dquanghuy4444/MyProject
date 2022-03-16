@@ -35,6 +35,22 @@ export const projects = [
     },
     {
         id: uuidv4(),
+        name: "RestfulAPI Auth and Chat ",
+        state: 0, // 0 : handmake , 1 : clone
+        wasCompleted: false,
+        wasPublish: true,
+        time: "",
+        tech: "NestJS + Mongodb + Websocket + Cronjob + Nodemail",
+        techid: [2],
+        description: "Restful API ứng dụng chat và authen sử dụng NestJS",
+        isFavorited: true,
+        imgBg: "1.jpg",
+        imgTech: ["nodejs.png"],
+        linkPublicWeb: "https://github.com/dquanghuy4444/nestjs-auth-and-chat",
+        linkSourceCode: "",
+    },
+    {
+        id: uuidv4(),
         name: "PSD Parse",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -48,22 +64,6 @@ export const projects = [
         imgTech: ["reactjs.png"],
         linkPublicWeb: "https://pohip-psd-parser.netlify.app/",
         linkSourceCode: "https://github.com/dquanghuy4444/psd-parser",
-    },
-    {
-        id: uuidv4(),
-        name: "Covid-19 Tracker",
-        state: 1, // 0 : handmake , 1 : clone
-        wasCompleted: true,
-        wasPublish: true,
-        time: "2h",
-        tech: "ReactJS ",
-        techid: [1],
-        description: "Ứng dụng để tra cứu thông tin dịch covid 19 của từng nước và thế giới",
-        isFavorited: false,
-        imgBg: "1.jpg",
-        imgTech: ["reactjs.png"],
-        linkPublicWeb: "https://pohip-covid19-tracker.netlify.app/",
-        linkSourceCode: "https://github.com/dquanghuy4444/covid19-tracker",
     },
     {
         id: uuidv4(),
@@ -179,22 +179,6 @@ export const projects = [
     },
     {
         id: uuidv4(),
-        name: "Restful API",
-        state: 1, // 0 : handmake , 1 : clone
-        wasCompleted: true,
-        wasPublish: false,
-        time: "2h",
-        tech: "NodeJS + Express + Mongodb",
-        techid: [2],
-        description: "Viết API bằng node , express",
-        isFavorited: false,
-        imgBg: "9.jpg",
-        imgTech: ["api.png", "nodejs.png", "mongodb.png"],
-        linkPublicWeb: "",
-        linkSourceCode: "https://github.com/dquanghuy4444/restful-api",
-    },
-    {
-        id: uuidv4(),
         name: "API authentication with JWT",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -241,4 +225,32 @@ export const projects = [
         linkPublicWeb: "https://www.npmjs.com/package/pohip-common",
         linkSourceCode: "https://github.com/dquanghuy4444/pohip-common",
     },
+    {
+        id: uuidv4(),
+        name: "Covid-19 Tracker",
+        state: 1, // 0 : handmake , 1 : clone
+        wasCompleted: true,
+        wasPublish: true,
+        time: "2h",
+        tech: "ReactJS ",
+        techid: [1],
+        description: "Ứng dụng để tra cứu thông tin dịch covid 19 của từng nước và thế giới",
+        isFavorited: false,
+        imgBg: "1.jpg",
+        imgTech: ["reactjs.png"],
+        linkPublicWeb: "https://pohip-covid19-tracker.netlify.app/",
+        linkSourceCode: "https://github.com/dquanghuy4444/covid19-tracker",
+    },
 ]
+
+
+export const infor ={
+    githubLink: "https://github.com/dquanghuy4444",
+    githubName: "dquanghuy4444",
+    fbLink: "https://www.facebook.com/dqhuy4444",
+    fbName: "dqhuy4444",
+    mail: "wepiohip@gmail.com",
+    skype: "wepiohip",
+    phone: "0963181679",
+    address: "Cổ Nhuế , Bắc Từ Liêm , Hà Nội",
+}

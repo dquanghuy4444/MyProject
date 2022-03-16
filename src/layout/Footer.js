@@ -1,50 +1,51 @@
 import React from 'react';
 import ButtonCopyText from '../components/ButtonCopyText';
 import './Footer.css';
+import { infor } from '../my-infor'
 
 function Footer({isDarkMode}) {
   return (
     <footer className={ isDarkMode ? "darkmode" : "bg-footer"}>
       <div className="myinfor-footer">
         <div>
-          <a href="https://github.com/dquanghuy4444" target="_blank">
+          <a href={infor.githubLink} target="_blank">
             <i className="fab fa-github"></i>
             {" "}
-            / dquanghuy4444
+            / {infor.githubName}
           </a>
         </div>
         <div>
-          <a href="https://www.facebook.com/dqhuy4444" target="_blank">
+          <a href={infor.fbLink} target="_blank">
             <i className="fab fa-facebook-square"></i>
             {" "}
-            / dqhuy4444
+            / {infor.fbName}
           </a>
         </div>
         <div>
           <i className="fas fa-envelope-square"></i>
           {" "}
-          : wepiohip@gmail.com
+          : {infor.mail}
           {" "}
-          <ButtonCopyText text="wepiohip@gmail.com"></ButtonCopyText>
+          <ButtonCopyText text={infor.mail}></ButtonCopyText>
         </div>
         <div>
           <i className="fab fa-skype"></i>
           {" "}
-          : wepiohip
+          : {infor.skype}
           {" "}
-          <ButtonCopyText text="wepiohip"></ButtonCopyText>
+          <ButtonCopyText text={infor.skype}></ButtonCopyText>
         </div>
         <div>
           <i className="fas fa-phone-alt"></i>
           {" "}
-          : 0963181679
+          : {infor.phone}
           {" "}
-          <ButtonCopyText text="0963181679"></ButtonCopyText>
+          <ButtonCopyText text={infor.phone}></ButtonCopyText>
         </div>
         <div>
           <i className="fas fa-map-marked-alt"></i>
           {" "}
-          : Cổ Nhuế , Bắc Từ Liêm , Hà Nội
+          : {infor.address}
         </div>
       </div>
 
