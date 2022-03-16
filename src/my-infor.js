@@ -1,7 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
 
-export const myprojects = [
+export const projects = [
     {
-        id: -2,
+        id: uuidv4(),
         name: "daudit",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -17,7 +18,7 @@ export const myprojects = [
         linkSourceCode: "",
     },
     {
-        id: -1,
+        id: uuidv4(),
         name: "Custom Your Face",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: false,
@@ -33,7 +34,7 @@ export const myprojects = [
         linkSourceCode: "",
     },
     {
-        id: 0,
+        id: uuidv4(),
         name: "PSD Parse",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -49,7 +50,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/psd-parser",
     },
     {
-        id: 1,
+        id: uuidv4(),
         name: "Covid-19 Tracker",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -65,7 +66,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/covid19-tracker",
     },
     {
-        id: 2,
+        id: uuidv4(),
         name: "Wishy Wishy",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -81,7 +82,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/wishywishy",
     },
     {
-        id: 3,
+        id: uuidv4(),
         name: "PoShop Mobile",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: false,
@@ -97,7 +98,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/poshop-mobilestore",
     },
     {
-        id: 4,
+        id: uuidv4(),
         name: "Bản đồ gas",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: false,
@@ -113,7 +114,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/gas-map",
     },
     {
-        id: 5,
+        id: uuidv4(),
         name: "Chat room",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -129,7 +130,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/chatroom",
     },
     {
-        id: 6,
+        id: uuidv4(),
         name: "WebRTC",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -145,7 +146,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/webrtc-stream",
     },
     {
-        id: 7,
+        id: uuidv4(),
         name: "Posts",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -161,7 +162,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/posts",
     },
     {
-        id: 8,
+        id: uuidv4(),
         name: "Quiz App",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -177,7 +178,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/quiz-app",
     },
     {
-        id: 9,
+        id: uuidv4(),
         name: "Restful API",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -193,7 +194,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/restful-api",
     },
     {
-        id: 10,
+        id: uuidv4(),
         name: "API authentication with JWT",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: true,
@@ -209,7 +210,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/authentication-jwt",
     },
     {
-        id: 11,
+        id: uuidv4(),
         name: "React Components",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: false,
@@ -225,7 +226,7 @@ export const myprojects = [
         linkSourceCode: "https://github.com/dquanghuy4444/my-react-components",
     },
         {
-        id: 12,
+        id: uuidv4(),
         name: "Library Pohip-common",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: false,

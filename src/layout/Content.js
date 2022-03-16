@@ -2,12 +2,12 @@ import React from 'react';
 import './Content.css';
 import { Button, Container } from 'reactstrap';
 import ProjectCard from '../components/ProjectCard';
-import { myprojects } from './my-projects'
+import { projects } from '../my-infor'
 
 function Content({filter , setFilter}) {
 
   const showProjects = () =>{
-    let result = myprojects;
+    let result = projects;
     if(filter.favorite){
       result = result.filter((project) =>
         project.isFavorited === true
