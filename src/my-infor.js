@@ -127,7 +127,7 @@ export const projects = [
         imgBg: "5.jpg",
         imgTech: ["nodejs.png", "socketio.png"],
         linkPublicWeb: "https://pohipchatroom.herokuapp.com/",
-        linkSourceCode: "https://github.com/dquanghuy4444/chatroom",
+        linkSourceCode: "https://github.com/dquanghuy4444/chat-room",
     },
     {
         id: uuidv4(),
