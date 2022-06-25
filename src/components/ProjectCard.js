@@ -21,11 +21,6 @@ const ProjectCard = ({ project }) => {
                   <img src={process.env.PUBLIC_URL + "/completed.png"} alt="Card image cap" width="10%" />
                 )
               }
-              {
-                project.wasPublish && (
-                  <img src={process.env.PUBLIC_URL + "/www.png"} alt="Card image cap" width="10%" />
-                )
-              }
             </div>
             <div className="tech">
               {
@@ -66,7 +61,7 @@ const ProjectCard = ({ project }) => {
               </CardText>
               {
                 project.wasPublish && (
-                  <a href={project.linkPublicWeb} target="_blank" className="btn btn-success mr-2">
+                  <a href={project.linkPublicWeb} target="_blank" className="btn btn-success mr-2" rel="noreferrer">
                     <i className="fas fa-location-arrow"></i>
                     {" "}
                     Chuyển tới trang
@@ -75,7 +70,7 @@ const ProjectCard = ({ project }) => {
               }
               {
                 project.linkSourceCode && (
-                  <a href={project.linkSourceCode} target="_blank" className="btn btn-primary">
+                  <a href={project.linkSourceCode} target="_blank" className="btn btn-primary" rel="noreferrer">
                     <i className="fab fa-github"></i>
                     {" "}
                     Source Code

@@ -46,8 +46,8 @@ export const projects = [
         isFavorited: true,
         imgBg: "1.jpg",
         imgTech: ["nodejs.png"],
-        linkPublicWeb: "https://github.com/dquanghuy4444/xes-tahc",
-        linkSourceCode: "",
+        linkPublicWeb: "",
+        linkSourceCode: "https://github.com/dquanghuy4444/xes-tahc",
     },
     {
         id: uuidv4(),
