@@ -163,22 +163,6 @@ export const projects = [
     },
     {
         id: uuidv4(),
-        name: "API authentication with JWT",
-        state: 1, // 0 : handmake , 1 : clone
-        wasCompleted: true,
-        wasPublish: false,
-        time: "2h",
-        tech: "NodeJS + Express + Mongodb + Jsonwebtoken + Bcryptjs ",
-        techid: [2],
-        description: "Viết API và xác minh bằng JWT",
-        isFavorited: false,
-        imgBg: "10.jpg",
-        imgTech: ["api.png", "nodejs.png", "mongodb.png"],
-        linkPublicWeb: "",
-        linkSourceCode: "https://github.com/dquanghuy4444/authentication-jwt",
-    },
-    {
-        id: uuidv4(),
         name: "React Components",
         state: 1, // 0 : handmake , 1 : clone
         wasCompleted: false,
