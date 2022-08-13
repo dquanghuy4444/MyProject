@@ -19,6 +19,22 @@ export const projects = [
     },
     {
         id: uuidv4(),
+        name: "ludee (landing page)",
+        state: 0, // 0 : handmake , 1 : clone
+        wasCompleted: true,
+        wasPublish: true,
+        time: "12h",
+        tech: "Reactjs(tailwindcss) + Lottie + i18n + netlify + namecheap",
+        techid: [1],
+        description: "Landing Page quảng bá app Ludee",
+        isFavorited: true,
+        imgBg: "10.jpg",
+        imgTech: ["reactjs.png"],
+        linkPublicWeb: "https://ludee.io",
+        linkSourceCode: "",
+    },
+    {
+        id: uuidv4(),
         name: "Custom Your Face",
         state: 0, // 0 : handmake , 1 : clone
         wasCompleted: false,
